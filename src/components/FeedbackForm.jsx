@@ -20,7 +20,7 @@ function FeedbackForm() {
             placeholder="Write a review"
             onChange={handleTextChange}
             />
-            <Button type="submit">Send</Button>
+            <Button type="submit" version="secondary">Send</Button>
         </div>
       </form>
     </Card>
