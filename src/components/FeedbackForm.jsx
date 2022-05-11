@@ -1,12 +1,14 @@
-import { useState } from "react";
-import Card from "./shared/Card";
-import Button from "./shared/Button";
+import { useState } from "react"
+import Card from "./shared/Card"
+import Button from "./shared/Button"
 
 function FeedbackForm() {
-  const [text, setText] = useState("");
+  const [text, setText] = useState("")
+  const [btnDisabled, setBtnDisabled] = useState("")
+  const [message, setMessage] = useState("")
 
   function handleTextChange(e) {
-    setText(e.target.value);
+    setText(e.target.value)
   }
   return (
     <Card>
@@ -20,11 +22,13 @@ function FeedbackForm() {
             placeholder="Write a review"
             onChange={handleTextChange}
           />
-          <Button type="submit" version="secondary">Send</Button>
+          <Button type="submit" version="secondary">
+            Send
+          </Button>
         </div>
       </form>
     </Card>
-  );
+  )
 }
 
-export default FeedbackForm;
+export default FeedbackForm
