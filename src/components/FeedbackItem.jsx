@@ -3,9 +3,9 @@ import Card from "./shared/Card";
 import { FaTimes } from "react-icons/fa";
 
 function FeedbackItem({ item, handleDelete }) {
-  const handleClick = (id) => {
-    console.log(id);
-  };
+  // const handleClick = (id) => {
+  //   console.log(id);
+  // };
 
   return (
     <Card reverse={true}>
